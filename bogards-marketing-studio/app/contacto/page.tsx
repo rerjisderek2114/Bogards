@@ -61,7 +61,7 @@ export default function Contacto() {
                 href={c.href}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="group flex items-start gap-4 card-surface rounded-2xl p-6 hover:border-electric/50 transition-colors"
+                className="group flex items-start gap-4 liquid-glass rounded-2xl p-6 hover:border-electric/50 transition-colors"
               >
                 <div className="w-11 h-11 rounded-xl bg-brand-gradient/15 border border-electric/25 flex items-center justify-center shrink-0">
                   <c.icon size={19} className="text-electric-light" />
@@ -74,7 +74,7 @@ export default function Contacto() {
               </a>
             ))}
 
-            <div className="card-surface rounded-2xl p-6">
+            <div className="liquid-glass rounded-2xl p-6">
               <div className="flex items-center gap-3 mb-3">
                 <MapPin size={17} className="text-electric-light" />
                 <p className="text-white font-medium text-sm">Ubicación</p>
@@ -87,7 +87,7 @@ export default function Contacto() {
           </Reveal>
 
           <Reveal delay={0.1}>
-            <div className="card-surface rounded-3xl p-7 md:p-9">
+            <div className="liquid-glass rounded-3xl p-7 md:p-9">
               <p className="text-white font-medium text-lg mb-1">Solicita tu cotización</p>
               <p className="text-sm text-haze mb-7">Completa el formulario y un especialista te contactará.</p>
               <ContactForm />

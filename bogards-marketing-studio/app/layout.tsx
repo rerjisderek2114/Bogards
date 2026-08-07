@@ -4,6 +4,7 @@ import './globals.css';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import WhatsAppButton from '@/components/WhatsAppButton';
+import NoiseFilter from '@/components/NoiseFilter';
 
 const poppins = Poppins({
   subsets: ['latin'],
@@ -51,6 +52,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="es" className={`${poppins.variable} ${inter.variable}`}>
       <body className="font-body antialiased bg-base text-mist selection:bg-electric">
+        <NoiseFilter />
         <Navbar />
         <main>{children}</main>
         <Footer />

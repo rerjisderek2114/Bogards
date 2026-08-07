@@ -65,7 +65,7 @@ export default function CasosDeExito() {
         <div className="container-x space-y-6">
           {cases.map((c, i) => (
             <Reveal key={c.name} delay={i * 0.08}>
-              <div className="card-surface rounded-3xl p-8 md:p-12 grid lg:grid-cols-[1.1fr_1fr] gap-10">
+              <div className="liquid-glass rounded-3xl p-8 md:p-12 grid lg:grid-cols-[1.1fr_1fr] gap-10">
                 <div>
                   <span className="text-xs uppercase tracking-widest text-cyan">{c.industry}</span>
                   <h2 className="font-display text-2xl md:text-3xl font-semibold text-white mt-3">

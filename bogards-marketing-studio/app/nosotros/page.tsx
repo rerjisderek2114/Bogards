@@ -55,7 +55,7 @@ export default function Nosotros() {
             <PixelTrail className="mt-8" count={5} />
           </Reveal>
           <Reveal delay={0.1}>
-            <div className="card-surface rounded-2xl p-8">
+            <div className="liquid-glass rounded-2xl p-8">
               <p className="text-white font-medium mb-4">Tono de comunicación</p>
               <p className="text-sm text-haze leading-relaxed">
                 Profesional, cercano, estratégico, innovador y orientado a resultados. Hablamos
@@ -72,7 +72,7 @@ export default function Nosotros() {
           <div className="grid sm:grid-cols-2 lg:grid-cols-5 gap-4 mt-14">
             {values.map((v, i) => (
               <Reveal key={v.name} delay={i * 0.07}>
-                <div className="card-surface rounded-2xl p-6 h-full">
+                <div className="liquid-glass rounded-2xl p-6 h-full">
                   <div className="w-11 h-11 rounded-xl bg-brand-gradient/15 border border-electric/25 flex items-center justify-center">
                     <v.icon size={19} className="text-electric-light" />
                   </div>

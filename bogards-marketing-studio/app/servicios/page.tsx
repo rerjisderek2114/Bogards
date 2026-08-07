@@ -99,7 +99,7 @@ export default function Servicios() {
             <a
               key={s.id}
               href={`#${s.id}`}
-              className="card-surface rounded-xl px-4 py-3 flex items-center gap-2.5 hover:border-electric/50 transition-colors"
+              className="liquid-glass rounded-xl px-4 py-3 flex items-center gap-2.5 hover:border-electric/50 transition-colors"
             >
               <s.icon size={15} className="text-electric-light shrink-0" />
               <span className="text-xs text-mist">{s.name}</span>
@@ -133,7 +133,7 @@ export default function Servicios() {
               </Link>
             </Reveal>
             <Reveal delay={0.1} className={i % 2 === 1 ? 'lg:order-1' : ''}>
-              <div className="card-surface rounded-2xl p-7">
+              <div className="liquid-glass rounded-2xl p-7">
                 <p className="text-xs uppercase tracking-widest text-haze mb-4">Incluye</p>
                 <div className="space-y-3">
                   {s.features.map((f) => (
