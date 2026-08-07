@@ -35,7 +35,7 @@ export default function Benefits() {
         <div className="grid sm:grid-cols-2 gap-3">
           {benefits.map((b, i) => (
             <Reveal key={b} delay={i * 0.05}>
-              <div className="flex items-center gap-3 card-surface rounded-xl px-4 py-3.5">
+              <div className="flex items-center gap-3 liquid-glass rounded-xl px-4 py-3.5">
                 <div className="w-6 h-6 rounded-full bg-brand-gradient/20 border border-electric/30 flex items-center justify-center shrink-0">
                   <Check size={12} className="text-cyan" />
                 </div>

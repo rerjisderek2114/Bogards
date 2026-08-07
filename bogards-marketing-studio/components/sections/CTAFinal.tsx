@@ -7,7 +7,7 @@ export default function CTAFinal() {
     <section className="py-24 md:py-32">
       <div className="container-x">
         <Reveal>
-          <div className="relative rounded-[2rem] overflow-hidden card-surface p-12 md:p-20 text-center">
+          <div className="relative rounded-[2rem] overflow-hidden liquid-glass p-12 md:p-20 text-center">
             <div className="absolute inset-0 bg-brand-gradient opacity-[0.12]" />
             <div className="absolute -top-20 -right-20 w-80 h-80 bg-cyan/20 blur-[100px] rounded-full" />
             <div className="absolute -bottom-20 -left-20 w-80 h-80 bg-electric/20 blur-[100px] rounded-full" />

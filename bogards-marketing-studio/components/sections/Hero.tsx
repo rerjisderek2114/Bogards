@@ -4,6 +4,7 @@ import Link from 'next/link';
 import { motion } from 'framer-motion';
 import { ArrowRight, Sparkles, TrendingUp, Users, Zap } from 'lucide-react';
 import PixelTrail from '../PixelTrail';
+import BackgroundVideo from '../BackgroundVideo';
 
 const floatingCards = [
   { icon: TrendingUp, label: 'Conversión', value: '+38%', pos: 'top-[8%] -left-2 md:-left-10' },
@@ -14,6 +15,7 @@ const floatingCards = [
 export default function Hero() {
   return (
     <section className="relative pt-40 pb-28 md:pt-48 md:pb-36 overflow-hidden">
+      <BackgroundVideo />
       <div className="absolute inset-0 bg-radial-fade" />
       <div className="absolute inset-0 dot-field opacity-40 [mask-image:radial-gradient(ellipse_60%_50%_at_50%_20%,black,transparent)]" />
       <motion.div
@@ -46,8 +48,9 @@ export default function Hero() {
           transition={{ duration: 0.7, delay: 0.1 }}
           className="font-display font-semibold text-center text-[2.5rem] leading-[1.08] sm:text-6xl md:text-7xl mt-8 max-w-4xl mx-auto text-white"
         >
-          Construimos sitios web que{' '}
-          <span className="text-gradient-brand">generan clientes</span>
+          Construimos sitios web que
+          <br />
+          <span className="text-shiny-brand">generan clientes</span>
         </motion.h1>
 
         <motion.p
@@ -81,7 +84,7 @@ export default function Hero() {
           </Link>
         </motion.div>
 
-        {/* Product mockup with floating stat cards, per brief */}
+        {/* Product mockup: liquid-glass shell + macOS-style chrome bar */}
         <motion.div
           initial={{ opacity: 0, y: 40 }}
           animate={{ opacity: 1, y: 0 }}
@@ -89,15 +92,15 @@ export default function Hero() {
           className="relative mt-20 md:mt-24 max-w-4xl mx-auto"
         >
           <div className="absolute -inset-6 bg-brand-gradient/20 blur-3xl rounded-[2rem]" />
-          <div className="relative card-surface rounded-2xl md:rounded-3xl p-2 shadow-card">
+          <div className="liquid-glass relative rounded-2xl md:rounded-3xl p-2 shadow-card">
             <div className="rounded-xl md:rounded-2xl overflow-hidden border border-border/60">
-              <div className="flex items-center gap-1.5 px-4 py-3 bg-surface-2 border-b border-border/60">
-                <span className="w-2.5 h-2.5 rounded-full bg-white/15" />
-                <span className="w-2.5 h-2.5 rounded-full bg-white/15" />
-                <span className="w-2.5 h-2.5 rounded-full bg-white/15" />
+              <div className="mac-bar">
+                <span className="mac-dot" style={{ background: '#ff5f57' }} />
+                <span className="mac-dot" style={{ background: '#febc2e' }} />
+                <span className="mac-dot" style={{ background: '#28c840' }} />
                 <span className="ml-3 text-[11px] text-haze/70">bogards.studio</span>
               </div>
-              <div className="bg-base p-8 md:p-14 min-h-[220px] flex flex-col items-center justify-center text-center relative">
+              <div className="bg-base/80 p-8 md:p-14 min-h-[220px] flex flex-col items-center justify-center text-center relative">
                 <PixelTrail className="absolute top-6 left-6" count={4} />
                 <p className="font-display text-white text-xl md:text-3xl font-medium max-w-md">
                   Impulsamos tu marca al siguiente nivel
@@ -112,7 +115,7 @@ export default function Hero() {
           {floatingCards.map(({ icon: Icon, label, value, pos }, i) => (
             <motion.div
               key={label}
-              className={`hidden md:flex absolute ${pos} glass rounded-2xl px-4 py-3 items-center gap-3 shadow-card`}
+              className={`hidden md:flex absolute ${pos} liquid-glass rounded-2xl px-4 py-3 items-center gap-3 shadow-card`}
               animate={{ y: [0, -10, 0] }}
               transition={{ duration: 5 + i, repeat: Infinity, ease: 'easeInOut', delay: i * 0.6 }}
             >

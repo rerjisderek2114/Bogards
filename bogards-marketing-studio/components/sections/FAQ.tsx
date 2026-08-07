@@ -42,7 +42,7 @@ export default function FAQ() {
         <div className="mt-12 space-y-3">
           {faqs.map((f, i) => (
             <Reveal key={f.q} delay={i * 0.05}>
-              <div className="card-surface rounded-2xl overflow-hidden">
+              <div className="liquid-glass rounded-2xl overflow-hidden">
                 <button
                   onClick={() => setOpen(open === i ? null : i)}
                   className="w-full flex items-center justify-between gap-4 px-6 py-5 text-left"

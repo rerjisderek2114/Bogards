@@ -35,7 +35,7 @@ export default function Testimonials() {
         <div className="grid md:grid-cols-3 gap-5 mt-14">
           {testimonials.map((t, i) => (
             <Reveal key={t.name} delay={i * 0.1}>
-              <div className="card-surface rounded-2xl p-7 h-full flex flex-col">
+              <div className="liquid-glass rounded-2xl p-7 h-full flex flex-col">
                 <div className="flex gap-1 text-cyan">
                   {Array.from({ length: 5 }).map((_, s) => (
                     <Star key={s} size={14} fill="currentColor" strokeWidth={0} />

@@ -47,7 +47,7 @@ export default function PortfolioPreview() {
         <div className="grid md:grid-cols-3 gap-5 mt-14">
           {projects.map((p, i) => (
             <Reveal key={p.name} delay={i * 0.1}>
-              <Link href="/portafolio" className="group block card-surface rounded-2xl overflow-hidden hover:border-electric/50 transition-colors">
+              <Link href="/portafolio" className="group block liquid-glass rounded-2xl overflow-hidden hover:border-electric/50 transition-colors">
                 <div className={`h-44 bg-gradient-to-br ${p.gradient} relative overflow-hidden`}>
                   <div className="absolute inset-0 bg-[radial-gradient(circle,rgba(255,255,255,0.18)_1px,transparent_1px)] [background-size:16px_16px]" />
                   <div className="absolute top-4 left-4 text-[11px] uppercase tracking-widest text-white/80 font-medium">

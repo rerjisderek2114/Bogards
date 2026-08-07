@@ -26,7 +26,7 @@ export default function Process() {
             {steps.map((s, i) => (
               <Reveal key={s.n} delay={i * 0.08} className="relative">
                 <div className="flex lg:flex-col items-center lg:items-start gap-4 lg:gap-0">
-                  <div className="w-16 h-16 shrink-0 rounded-2xl card-surface flex items-center justify-center font-display text-lg text-gradient-brand font-semibold relative z-10">
+                  <div className="w-16 h-16 shrink-0 rounded-2xl liquid-glass flex items-center justify-center font-display text-lg text-gradient-brand font-semibold relative z-10">
                     {s.n}
                   </div>
                   <div className="lg:mt-5">

@@ -30,7 +30,7 @@ export default function Services() {
             <Reveal key={s.name} delay={(i % 4) * 0.06}>
               <Link
                 href={s.href}
-                className="group block h-full card-surface rounded-2xl p-6 hover:border-electric/50 transition-colors"
+                className="group block h-full liquid-glass rounded-2xl p-6 hover:border-electric/50 transition-colors"
               >
                 <div className="w-11 h-11 rounded-xl bg-brand-gradient/15 border border-electric/25 flex items-center justify-center group-hover:bg-brand-gradient group-hover:border-transparent transition-colors">
                   <s.icon size={19} className="text-electric-light group-hover:text-white transition-colors" />
