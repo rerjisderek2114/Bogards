@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import { Mail, Phone, MapPin, MessageCircle, Calendar } from 'lucide-react';
 import Reveal from '@/components/Reveal';
 import ContactForm from '@/components/ContactForm';
+import KineticGrid from '@/components/ui/kinetic-grid';
 
 export const metadata: Metadata = {
   title: 'Contacto',
@@ -35,9 +36,8 @@ const channels = [
 export default function Contacto() {
   return (
     <>
-      <section className="pt-40 pb-16 md:pt-48 md:pb-20 relative overflow-hidden">
-        <div className="absolute inset-0 bg-radial-fade" />
-        <div className="container-x relative text-center max-w-2xl mx-auto">
+      <KineticGrid globalColor="default" className="min-h-[60vh] md:min-h-[70vh] flex items-center pt-24">
+        <div className="container-x relative text-center max-w-2xl mx-auto py-16">
           <Reveal>
             <span className="inline-flex items-center gap-2 text-xs font-medium tracking-[0.2em] uppercase text-cyan justify-center">
               <span className="w-6 h-px bg-cyan" /> Contacto
@@ -46,11 +46,12 @@ export default function Contacto() {
               Hablemos de tu <span className="text-gradient-brand">próximo proyecto</span>
             </h1>
             <p className="text-haze text-lg mt-6 leading-relaxed">
-              Cuéntanos qué necesitas y te respondemos en menos de 24 horas hábiles.
+              Cuéntanos qué necesitas y te respondemos en menos de 24 horas hábiles. Mueve el
+              cursor por la pantalla — así de reactivas construimos las interfaces.
             </p>
           </Reveal>
         </div>
-      </section>
+      </KineticGrid>
 
       <section id="cotizar" className="pb-24 scroll-mt-24">
         <div className="container-x grid lg:grid-cols-[1fr_1.2fr] gap-8">
